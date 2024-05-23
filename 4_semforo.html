@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4. Semáforo | El led y el buzzer </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">El led y el buzzer</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li><a href="3_tobi_enciende_un_led.html" class="daddy">3. Tobi enciende un Led</a>
+   <ul class="other-section">
+      <li><a href="31_mis_bloques_blink.html" class="no-ch">3.1. Mis Bloques Blink</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="4_semforo.html" class="active daddy">4. Semáforo</a>
+   <ul>
+      <li><a href="41_semaforo_con_seales_auditivas.html" class="no-ch">4.1. Semaforo con señales auditivas</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="31_mis_bloques_blink.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>4</strong> de <strong>5</strong></span> <span class="sep">| </span><a href="41_semaforo_con_seales_auditivas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4. Semáforo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Programamos los leds de un semáforo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_128_2" class="block iDevice_content">
+<div class="exe-text"><p><span style="color: #ff6600;"><strong>PonchoBot</strong></span> viene con su propio semáforo incorporado, para facilitar el <strong>aprendizaje</strong> de la programación.</p>
+<p style="text-align: center;"><video width="727" height="727" controls="controls" autoplay="autoplay" muted="muted">
+<source src="Semaforo.mp4" type="video/mp4" /></video></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id17">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Creando Mis bloques como estrategia de programación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta17_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Hay diferentes maneras de programar un semáforo, la más simple es con el mismo intervalo de tiempo para los tres led <em>(comenzando por la luz roja pasando a la amarilla y luego la verde)</em>; repitiendo este cilco hasta que se finalice el programa.</p>
+<p><img src="img1.6.png" width="798" height="828" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>En esta propuesta de programación se ha utilizado la creación de tres bloques: Rojo - Amarillo y Verde. Como se ve los tres tienen los mismos bloques, variando solamente los parámetros del número de pin y la leyenda del globito:</p>
+<ul>
+<li><span style="color: #ff0000;">Pin 6 para el rojo</span></li>
+<li><strong><span style="color: #ffff00;">Pin 7 para el amarillo</span></strong></li>
+<li><span style="color: #339966;">Pin 8 para el verde</span></li>
+</ul>
+<p>Su lógica es igual a la ya vista para el Blink del led rojo conectado al pin 13, solamente se ha agregado el bloque <span style="background-color: #7f09ed;"><strong><span style="color: #ffffff;"> decir ... </span></strong></span>, ubicado dentro de la categoría <span style="color: #ffffff; background-color: #7f09ed;"><strong> Apariencia </strong></span>, para que Tobi muestre un globito con el color del led que se enciende.</p>
+<p><video width="825" height="825" style="display: block; margin-left: auto; margin-right: auto;" controls="controls" autoplay="autoplay" muted="muted">
+<source src="Semaforo1.mp4" type="video/mp4" /></video></p>
+<p>Una vez creado los tres bloques, Rojo, Amarillo y Verde, y completada la programación del bloque Rojo, se puede duplicar haciendo clic derecho y pegando los bloques a las cabeceras <span style="color: #ffffff; background-color: #ff0000;"> definir Amarillo </span> y <span style="color: #ffffff; background-color: #ff0000;"> definir Verde </span>, modificando el número de pin y el color dentro del bloque <span style="color: #ffffff; background-color: #cc99ff;"> decir ...  </span>, como se observa en la animación anterior.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Fichero adjunto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_82" class="block iDevice_content">
+<p><a href="https://drive.google.com/uc?export=download&amp;id=1AXOsBocb8QoKojduSgbRRQN4KXpyw9Id" title="[.sb3 - 67 KB]">Descargar programa de ejemplo</a><span class="exe-link-data file-size"> (.sb3 - 67 <abbr title="KiloBytes" lang="en">KB</abbr>)</span></p>
+</div>
+<ul class='exeFileList'></ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id32">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta de Elección Múltiple</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-32_86" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion32_86" class="block question iDevice_content">
+<p>Los bloques <span style="color: #ffffff; background-color: #339966;">set digital ...</span> ubicados al inicio, debajo de <span style="color: #ffffff; background-color: #ffcc00;">al presionar ...</span>, tienen la función de:</p>
+</div>
+<section class="iDevice_hint">
+<h1 class="iDevice_hint_title">Sugerencia</h1>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint32_86" class="block iDevice_content">
+<ul>
+<li>El estado LOW  significa enviar 0 voltio al pin, lo que hace que el led conectado a dicho pin esté apagado.</li>
+<li>El estado HIGH significa enviar 5 voltios al pin, lo que hace que el led conectado a dicho pin esté prendido.</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i32_89" class="sr-av"><a href="#answer-32_89">Opción 1</a></label><input type="radio" name="option32_86" id="i32_89" class="exe-radio-option exe-radio-option-0-3-32_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-32_89"><div id="taans32_89" class="block iDevice_content">
+<p>hacer parpadear los  tres leds.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i32_92" class="sr-av"><a href="#answer-32_92">Opción 2</a></label><input type="radio" name="option32_86" id="i32_92" class="exe-radio-option exe-radio-option-1-3-32_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-32_92"><div id="taans32_92" class="block iDevice_content">
+<p>prender los tres leds.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i32_733" class="sr-av"><a href="#answer-32_733">Opción 3</a></label><input type="radio" name="option32_86" id="i32_733" class="exe-radio-option exe-radio-option-2-3-32_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-32_733"><div id="taans32_733" class="block iDevice_content">
+<p>apagar los tres leds.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b32_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b32_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b32_86" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-32_89">Incorrecto</a><span> (<a href="#sa0b32_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-32_92">Incorrecto</a><span> (<a href="#sa1b32_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-32_733">Opción correcta</a><span> (<a href="#sa2b32_86">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id33">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta de Elección Múltiple</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-33_95" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion33_95" class="block question iDevice_content">
+<p>El estado <strong>HIGH</strong> en el pin digital 6 enciende el <span style="color: #ff0000;">led rojo</span> porque: </p>
+<p><img src="img0.1.png" width="342" height="62" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+<section class="iDevice_hint">
+<h1 class="iDevice_hint_title">Sugerencia</h1>
+<div class="iDevice_hint_content js-hidden">
+<div id="tahint33_95" class="block iDevice_content">
+<table border="1" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 13.8682%;">
+<p><strong><img src="img0.png" width="115" height="328" alt="" /></strong></p>
+</td>
+<td style="width: 86.1318%;">
+<p style="text-align: center;"><strong>Imagen del circuito interior del semáforo de</strong> <span style="color: #ff6600;"><strong>PonchoBot</strong></span> </p>
+<p>La pata más larga de un led corresponde al cátodo del diodo (+) y tiene que estar conectada a una salida del <strong>Arduino Nano</strong> que entregue entre 0 y 5 volt. En el caso del semáforo incorporado en <strong><span style="color: #ff6600;">PonchoBot</span>, </strong>el (+) de los led está identificado con un cable de su mismo color, el cual se va a conectar a un pin del <strong>Arduino Nano</strong>:  <span style="color: #ff0000;">pin 6 Rojo</span> -<span style="color: #f2de29;"> pin 7 Amarillo</span> - <span style="color: #339966;">pin 8 Verde</span>.</p>
+<p><strong>Nota:</strong></p>
+<ul>
+<li>En la izquierda de la imagen tenemos las patas largas de los led soldadas a las resistencias de 220 ohm <em>(rojo-rojo-marrón)</em> y a los cables con sus respectivos colores, que se conectan a los pines de Arduino.</li>
+<li><span style="font-family: inherit; font-size: inherit;">En la derecha, las patas cortas soldadas entre sí y al cable negro que se conecta al (-) de Arduino o GND. </span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i33_789" class="sr-av"><a href="#answer-33_789">Opción 1</a></label><input type="radio" name="option33_95" id="i33_789" class="exe-radio-option exe-radio-option-0-3-33_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-33_789"><div id="taans33_789" class="block iDevice_content">
+<p>Según las normas de construcción, <strong>Arduino Nano</strong> reserva siempre el <strong>pin 6</strong> a los leds <span style="color: #ff0000;">rojos</span>.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i33_792" class="sr-av"><a href="#answer-33_792">Opción 2</a></label><input type="radio" name="option33_95" id="i33_792" class="exe-radio-option exe-radio-option-1-3-33_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-33_792"><div id="taans33_792" class="block iDevice_content">
+<p>Da lo mismo cualquier valor que se le asigne al pin, <strong>Arduino Nano</strong> entiende que es para encender el led <span style="color: #ff0000;">ro</span><span style="font-size: 1.05em;"><span style="color: #ff0000;">jo</span>.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i33_795" class="sr-av"><a href="#answer-33_795">Opción 3</a></label><input type="radio" name="option33_95" id="i33_795" class="exe-radio-option exe-radio-option-2-3-33_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-33_795"><div id="taans33_795" class="block iDevice_content">
+<p>Porque en el semáforo de <strong><span style="color: #ff6600;">PonchoBot</span>, </strong>el cátodo del led rojo del semáforo (+) está conectado a través del cable <span style="color: #ff0000;">rojo</span>, al pin digital 6 de <strong>Arduino Nano</strong>.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b33_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b33_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b33_95" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-33_789">Incorrecto</a><span> (<a href="#sa0b33_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-33_792">Incorrecto</a><span> (<a href="#sa1b33_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-33_795">Opción correcta</a><span> (<a href="#sa2b33_95">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="31_mis_bloques_blink.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>4</strong> de <strong>5</strong></span> <span class="sep">| </span><a href="41_semaforo_con_seales_auditivas.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3. Tobi enciende un Led | El led y el buzzer </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Sergio Arciénaga" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site exe-search-bar" id="exe-node-2"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">El led y el buzzer</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Inicio</a></li>
+   <li id="active"><a href="3_tobi_enciende_un_led.html" class="active daddy">3. Tobi enciende un Led</a>
+   <ul>
+      <li><a href="31_mis_bloques_blink.html" class="no-ch">3.1. Mis Bloques Blink</a></li>
+   </ul>
+   </li>
+   <li><a href="4_semforo.html" class="daddy">4. Semáforo</a>
+   <ul class="other-section">
+      <li><a href="41_semaforo_con_seales_auditivas.html" class="no-ch">4.1. Semaforo con señales auditivas</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>5</strong></span> <span class="sep">| </span><a href="31_mis_bloques_blink.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3. Tobi enciende un Led</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id9">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Usando los bloques de Arduino</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta9_131_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"><span style="color: #ff6600; font-size: 14pt;"><strong><span style="color: #3366ff;">Ha llegado el momento de conectar nuestro</span> Ponchobot <span style="color: #3366ff;">con Pictoblox</span></strong></span></p>
+<p style="text-align: left;"><em>Sobre la base del programa anterior <strong>Tobi camina, </strong>usando el bloque creado </em><span style="color: #ffffff; background-color: #ff0000;"> </span><strong><span style="color: #ffffff; background-color: #ff0000;">ir y venir  </span></strong><em><strong>,</strong> vamos a programar el led conectado al <strong>pin digital 13 de Arduino Nano</strong>, para que se <span style="color: #ff0000;"><strong>encienda y apague </strong></span>(blink) cada vez que Tobi rebote en un borde lateral.</em></p>
+<p style="text-align: center;"><video width="786" height="786" controls="controls" autoplay="autoplay" muted="muted">
+<source src="BlinkPonchobot1.mp4" type="video/mp4" /></video></p>
+<table border="1" style="width: 82.002%; margin-left: auto; margin-right: auto;" class="EducaAnd_COM">
+<tbody>
+<tr>
+<td style="width: 24.3865%;"><img src="img1.3.png" width="231" height="176" alt="" /></td>
+<td style="width: 57.6155%;">
+<p>Conectamos nuestro <span style="color: #ff6600;"><strong>PonchoBot</strong></span> al puerto USB y luego, en <span style="color: #800080;"><strong>Pictoblox</strong></span> hacemos clic sobre la opción de menú <span style="color: #ffffff; background-color: #800080;"> Board </span>, para seleccionar la placa <strong>Arduino Nano</strong>. Debemos también s<span style="font-size: 16.8px; font-family: inherit;">eleccionar el puerto COM correspondiente <em>(en este caso COM6 (wch.cn))</em>, haciendo clic en el botón</span><span style="font-size: 16.8px; font-family: inherit;"> </span><span style="color: #ffffff; background-color: #800080;"><strong>Conectar</strong></span><span style="font-size: 16.8px; font-family: inherit;">. </span></p>
+<p><img src="img2.3.png" width="208" height="150" alt="" style="float: left;" /></p>
+<p style="text-align: left;"><img src="img3.3.png" width="224" height="146" alt="" style="text-align: center; font-family: inherit; font-size: inherit; display: block; margin-left: auto; margin-right: auto;" /></p>
+</td>
+</tr>
+<tr>
+<td style="width: 24.3865%;"><img src="img5.1.png" width="131" height="129" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><img src="img4.2.png" width="236" height="253" alt="" /></td>
+<td style="width: 57.6155%;">
+<p>Dentro de la categoría <strong>Arduino Nano</strong> tenemos los bloques que permiten programar nuestro <span style="color: #ff6600;"><strong>PonchoBot</strong></span>.</p>
+<p><img src="img9.png" width="307" height="55" alt="" style="font-size: 16.8px; display: block; margin-left: auto; margin-right: auto;" />Como el pin digital 13 se debe prender únicamente cuando Tobi esté tocando el borde, debemos recurrir a una estructura de control <span style="color: #ffffff; background-color: #ff6600;"><strong> si &lt;...&gt; entonces </strong></span>, dentro de la categoría <span style="background-color: #ff9900; color: #ffffff;">Control</span>. El hueco entre <span style="color: #ffffff; background-color: #ff9900;">si y entonces</span> lo llenamos con la condición lógica correspondiente, en nuestro caso:  <span style="color: #ffffff; background-color: #00ccff;"><strong> ¿tocando el borde? </strong></span> ubicado dentro de la categoría <span style="color: #ffffff; background-color: #00ccff;">Sensores  </span><span style="font-size: 10pt;"><em>(se debe cambiar </em><span style="color: #ffffff; background-color: #00ccff;">el puntero del ratón</span><em> por </em><span style="color: #ffffff; background-color: #00ccff;">el borde</span><em>)</em></span></p>
+<p><span style="color: #ffffff; background-color: #00ccff;"><span style="color: #000000;"><img src="img12.png" width="204" height="90" alt="" style="float: left;" /></span></span></p>
+<img src="img11.1.png" width="224" height="74" alt="" style="color: #ffffff; display: block; margin-left: auto; margin-right: auto;" />
+<p><span style="background-color: #00ccff;"></span></p>
+<p>En <em>la boca</em> de la estructura<span style="font-family: inherit; font-size: inherit;"> </span><span style="color: #ffffff; background-color: #ff6600;"><strong>si &lt;<span style="color: #ffffff; background-color: #00ccff;"> ¿tocando el borde? </span>&gt; entonces </strong></span><span style="color: #ffffff;"><span style="color: #000000;"> </span></span>vamos a arrastrar el bloque de la categoría <strong>Arduino Nano</strong> para programar el blink (prender y apagar el led), teniendo cuidado de cambiar en el segundo bloque el valor de <span style="color: #ffffff; background-color: #339966;"><strong>HIGH</strong></span> por <span style="color: #ffffff; background-color: #339966;"><strong>LOW</strong></span></p>
+<p style="text-align: center;"><img src="img11.png" width="255" height="157" alt="" style="font-size: 16.8px; text-align: center;" /></p>
+</td>
+</tr>
+<tr>
+<td style="width: 24.3865%; text-align: center;" colspan="2">
+<p style="text-align: left;">Al agregar los bloques para <span style="color: #ff0000;">encender y apagar</span> el led conectado al pin digital 13, dentro de nuestro bloque<strong style="font-size: 16.8px;"> <span style="color: #ffffff; background-color: #ff0000;"> definir ir y venir </span>, nos debe quedar así:</strong> </p>
+<p style="text-align: center;"><strong style="font-size: 16.8px;"><img src="img11.2.png" width="275" height="352" alt="" /></strong></p>
+<p style="text-align: left;"><strong style="font-size: 16.8px;">Notar </strong>que<span style="font-size: 16.8px;"> el bloque</span><span style="font-family: inherit; font-size: inherit;"> </span><span style="background-color: #3366ff; color: #ffffff;"> rebotar si toca un borde </span><span style="font-family: inherit; font-size: inherit;"> debe estar después de la estructura </span><span style="color: #ffffff; background-color: #ff6600;"><strong>si &lt;<span style="color: #ffffff; background-color: #00ccff;"> ¿tocando el borde? </span>&gt; entonces </strong></span><span style="font-family: inherit; font-size: inherit;"> </span><span style="font-family: inherit; font-size: inherit;">porque sino la condición de <span style="color: #ffffff; background-color: #ff6600;"><strong><span style="color: #ffffff; background-color: #00ccff;"> ¿tocando el borde? </span></strong></span> nunca se cumplirá, ya que previamente le dijimos a Tobi que rebote (deje de tocar el borde).</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 24.3865%;"><img src="img7.png" width="225" height="82" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></td>
+<td style="width: 57.6155%;">
+<p>Lo único que resta es subir la programación a la placa con el botón <strong>Upload Firmaware</strong> y luego ejecutar presionando en la <span style="color: #ffffff; background-color: #008000;">banderita verde.</span></p>
+<p><strong>Importante: </strong><strong>NO desenchufar el cable USB</strong><em> que conecta Arduino Nano con nuestra PC.</em> </p>
+<p><span style="color: #ffffff; background-color: #008000;"><img src="img8.png" width="172" height="83" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><strong></strong></p>
+<p style="text-align: left;"><strong>Podemos también crear un bloque para el blink, obteniendo un programa más organizado y entendible. El programa con esta modificación nos quedaría así:</strong></p>
+<p style="text-align: left;"><img src="img13.png" width="418" height="384" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FileAttachIdeviceInc em_iDevice em_iDevice_assignment" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Fichero adjunto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_82" class="block iDevice_content">
+<p><a href="https://drive.google.com/uc?export=download&amp;id=1EgJdOWSZU_N3CqGSXd4mr4YP_rQ3Awls" title="[.sb3 - 64 KB]">Descargar programa de ejemplo</a><span class="exe-link-data file-size"> (.sb3 - 64 <abbr title="KiloBytes" lang="en">KB</abbr>)</span></p>
+</div>
+<ul class='exeFileList'></ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">A experimentar!!</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Seguramente, luego de completar la tarea propuesta, tenemos ganas de experimentar e investigar cosas por nuestra cuenta. Te proponemos a modo de ejemplo las siguientes:</p>
+<ul>
+<li>Que el led haga un doble blink cada vez que Tobi toca un borde.</li>
+<li>Que Tobi diga, por ej: <em>Rojo </em>cada vez que toca un borde. Pista: en <span style="color: #ffffff; background-color: #cc99ff;">Apariencia</span> podés encontrar bloques que te ayuden.<img src="img0.2.png" width="222" height="71" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></li>
+</ul>
+<p></p>
+<ul>
+<li>Ubica el bloque <span style="color: #ffffff; background-color: #3366ff;"> robotar si toca un borde </span> antes de la estructura de control <span style="color: #ffffff; background-color: #ff9900;"> <strong>si &lt; <span style="background-color: #00ccff;">¿tocando el borde?</span> &gt; entonces</strong></span> y observa el comportamiento del led. ¿Es el esperado? ¿Por qué? La explicación la podés encontrar releyendo  lo expuesto anteriormente.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><span class="page-counter">Página <strong>2</strong> de <strong>5</strong></span> <span class="sep">| </span><a href="31_mis_bloques_blink.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="_style_js.js"></script></body></html>
